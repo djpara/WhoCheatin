@@ -56,4 +56,7 @@ class AddNewResponseViewController: UIViewController {
         newResponses.append(text)
         newResponseTextView.text = ""
     }
+    @IBAction func backgroundTouched(_ sender: Any) {
+        newResponseTextView.resignFirstResponder()
+    }
 }

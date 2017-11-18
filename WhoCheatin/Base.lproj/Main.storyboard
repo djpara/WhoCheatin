@@ -241,7 +241,7 @@
         <scene sceneID="zhO-Y0-0Qs">
             <objects>
                 <viewController id="FXq-fm-WcU" customClass="AddNewResponseViewController" customModule="WhoCheatin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ePB-iR-iLt">
+                    <view key="view" contentMode="scaleToFill" id="ePB-iR-iLt" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -303,6 +303,9 @@
                             <constraint firstItem="cUm-d8-GUo" firstAttribute="top" secondItem="9Zo-wj-mbD" secondAttribute="top" constant="250" id="vQ2-pl-NTL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Zo-wj-mbD"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="FXq-fm-WcU" eventType="touchDown" id="zkw-Tz-Tbg"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="44g-19-f2I" id="QwD-WN-q8a"/>
