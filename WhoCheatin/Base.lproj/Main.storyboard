@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lic-gj-pWh">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MalayalamSangamMN.ttc">
+            <string>MalayalamSangamMN</string>
+            <string>MalayalamSangamMN-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Greeting View Controller-->
+        <scene sceneID="jkR-S4-kWH">
+            <objects>
+                <viewController id="lic-gj-pWh" customClass="GreetingViewController" customModule="WhoCheatin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C8g-Ot-Vqy" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-ND-RP9">
+                                <rect key="frame" x="673" y="964" width="75" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Kk1-29-RI4"/>
+                                    <constraint firstAttribute="height" constant="40" id="uvL-QJ-9TJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="lic-gj-pWh" eventType="touchUpInside" id="dAh-bF-oz5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you playing against?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-8c-fN4">
+                                <rect key="frame" x="20" y="470" width="728" height="28.5"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What game are you playing?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfV-0f-3Tj">
+                                <rect key="frame" x="20" y="586" width="728" height="28.5"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9if-nx-jyb">
+                                <rect key="frame" x="20" y="506" width="728" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter game" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmu-og-c8b">
+                                <rect key="frame" x="20" y="622.5" width="728" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lew-P4-vBE">
+                                <rect key="frame" x="259" y="120" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="48D-8l-7j6"/>
+                                    <constraint firstAttribute="width" constant="250" id="hFW-tn-ELO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="LogoSample_ByTailorBrands"/>
+                                <connections>
+                                    <action selector="logoButtonPressed:" destination="lic-gj-pWh" eventType="touchUpInside" id="bcX-MK-xaO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="trailing" secondItem="Sxh-ND-RP9" secondAttribute="trailing" constant="20" id="0V5-fD-3rG"/>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="trailing" secondItem="9if-nx-jyb" secondAttribute="trailing" constant="20" id="0tG-W8-WdF"/>
+                            <constraint firstItem="vmu-og-c8b" firstAttribute="leading" secondItem="8pX-HU-5xZ" secondAttribute="leading" constant="20" id="KXZ-us-c9S"/>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="trailing" secondItem="FHd-8c-fN4" secondAttribute="trailing" constant="20" id="Lj1-Wa-77g"/>
+                            <constraint firstItem="FHd-8c-fN4" firstAttribute="leading" secondItem="8pX-HU-5xZ" secondAttribute="leading" constant="20" id="N90-dF-9Rp"/>
+                            <constraint firstItem="lew-P4-vBE" firstAttribute="centerX" secondItem="C8g-Ot-Vqy" secondAttribute="centerX" id="P3W-mA-wh7"/>
+                            <constraint firstItem="lew-P4-vBE" firstAttribute="top" secondItem="8pX-HU-5xZ" secondAttribute="top" constant="100" id="QRp-sw-10H"/>
+                            <constraint firstItem="FHd-8c-fN4" firstAttribute="top" secondItem="lew-P4-vBE" secondAttribute="bottom" constant="100" id="QvM-XE-nt0"/>
+                            <constraint firstItem="jfV-0f-3Tj" firstAttribute="top" secondItem="9if-nx-jyb" secondAttribute="bottom" constant="50" id="V8H-YC-pIG"/>
+                            <constraint firstItem="vmu-og-c8b" firstAttribute="top" secondItem="jfV-0f-3Tj" secondAttribute="bottom" constant="8" id="ar3-ST-j20"/>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="trailing" secondItem="vmu-og-c8b" secondAttribute="trailing" constant="20" id="cLV-am-Fzd"/>
+                            <constraint firstItem="9if-nx-jyb" firstAttribute="leading" secondItem="8pX-HU-5xZ" secondAttribute="leading" constant="20" id="g0X-vw-w2j"/>
+                            <constraint firstItem="9if-nx-jyb" firstAttribute="top" secondItem="FHd-8c-fN4" secondAttribute="bottom" constant="8" id="lAD-Cb-Lpt"/>
+                            <constraint firstItem="jfV-0f-3Tj" firstAttribute="leading" secondItem="8pX-HU-5xZ" secondAttribute="leading" constant="20" id="lhN-K8-O40"/>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="bottom" secondItem="Sxh-ND-RP9" secondAttribute="bottom" constant="20" id="o35-Ei-7aT"/>
+                            <constraint firstItem="8pX-HU-5xZ" firstAttribute="trailing" secondItem="jfV-0f-3Tj" secondAttribute="trailing" constant="20" id="v7c-KH-UVD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8pX-HU-5xZ"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="lic-gj-pWh" eventType="touchDown" id="wSd-Fc-WhP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="gameTextField" destination="vmu-og-c8b" id="Hph-9X-HHo"/>
+                        <outlet property="logoButton" destination="lew-P4-vBE" id="Y8w-ok-GHo"/>
+                        <outlet property="nameTextField" destination="9if-nx-jyb" id="VIy-P3-bBf"/>
+                        <outlet property="nextButton" destination="Sxh-ND-RP9" id="pkz-hB-Jmo"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="RzR-0t-1PP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpW-EF-6v9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="133"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="WhoCheatin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does playerName cheat at playerGame?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-4n-PnH">
+                                <rect key="frame" x="0.0" y="170" width="768" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aoJ-ib-Vff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-kg-XSb">
+                                <rect key="frame" x="16" y="268" width="736" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Cl-7v-jj2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Tap here to find out">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyf-ag-rbg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU8-jL-1nT">
+                                <rect key="frame" x="16" y="678" width="736" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rGr-UM-KVl"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="FXq-fm-WcU" kind="show" id="wnS-vV-aMe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-KR-9Cg">
+                                <rect key="frame" x="16" y="678" width="736" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CUq-ea-nAv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spongebobicon" translatesAutoresizingMaskIntoConstraints="NO" id="skB-KK-wjt">
+                                <rect key="frame" x="259" y="408" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0tC-Go-EV5"/>
+                                    <constraint firstAttribute="width" constant="250" id="MqC-zH-3zJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0S-6G-txH">
+                                <rect key="frame" x="673" y="964" width="75" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Fgs-Pf-xkI"/>
+                                    <constraint firstAttribute="height" constant="40" id="Tdh-16-ade"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A65-Pn-vOC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6x-qV-idW">
+                                <rect key="frame" x="20" y="964" width="75" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Meq-GH-FxH"/>
+                                    <constraint firstAttribute="width" constant="75" id="wLX-rC-VCi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRE-AR-mFL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26713461150350798" green="0.08455750849126635" blue="0.61417354060913709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P0S-6G-txH" secondAttribute="bottom" constant="20" id="0Fw-02-Grb"/>
+                            <constraint firstItem="EU8-jL-1nT" firstAttribute="top" secondItem="skB-KK-wjt" secondAttribute="bottom" constant="20" id="48q-PE-9a9"/>
+                            <constraint firstItem="d2h-KR-9Cg" firstAttribute="top" secondItem="skB-KK-wjt" secondAttribute="bottom" constant="20" id="7f8-HE-bGL"/>
+                            <constraint firstItem="5Rd-kg-XSb" firstAttribute="top" secondItem="I2L-4n-PnH" secondAttribute="bottom" constant="50" id="AzH-Hk-TQH"/>
+                            <constraint firstItem="I2L-4n-PnH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BD0-Gj-LKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Rd-kg-XSb" secondAttribute="trailing" constant="16" id="Csw-bn-pvr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I2L-4n-PnH" secondAttribute="trailing" id="EWp-aw-t5j"/>
+                            <constraint firstItem="EU8-jL-1nT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GNC-Us-rwp"/>
+                            <constraint firstItem="5Rd-kg-XSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hn7-m4-ft4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d2h-KR-9Cg" secondAttribute="trailing" constant="16" id="LO2-Sg-SZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K6x-qV-idW" secondAttribute="bottom" constant="20" id="MT6-hG-fxU"/>
+                            <constraint firstItem="skB-KK-wjt" firstAttribute="top" secondItem="5Rd-kg-XSb" secondAttribute="bottom" constant="100" id="R8N-xz-6Cl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EU8-jL-1nT" secondAttribute="trailing" constant="16" id="Wal-3n-bs0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P0S-6G-txH" secondAttribute="trailing" constant="20" id="Xft-Fa-PEt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I2L-4n-PnH" secondAttribute="trailing" id="dvg-uH-nPl"/>
+                            <constraint firstItem="skB-KK-wjt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fDb-Hu-uAK"/>
+                            <constraint firstItem="EU8-jL-1nT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fOu-q5-w7d"/>
+                            <constraint firstItem="d2h-KR-9Cg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iwP-dQ-TYY"/>
+                            <constraint firstItem="d2h-KR-9Cg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOH-9L-dEw"/>
+                            <constraint firstItem="I2L-4n-PnH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="vr5-4L-Gc0"/>
+                            <constraint firstItem="K6x-qV-idW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xwA-Gx-fIl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="d2h-KR-9Cg" id="Vox-D6-6XW"/>
+                        <outlet property="backButton" destination="K6x-qV-idW" id="FbW-5h-1et"/>
+                        <outlet property="clearButton" destination="P0S-6G-txH" id="RWr-nZ-Zt1"/>
+                        <outlet property="questionLabel" destination="I2L-4n-PnH" id="MTo-F6-2Mq"/>
+                        <outlet property="sbImage" destination="skB-KK-wjt" id="JqS-7V-kV9"/>
+                        <outlet property="tapButton" destination="5Rd-kg-XSb" id="QJc-7f-lF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.65625" y="131.8359375"/>
+        </scene>
+        <!--Add New Response View Controller-->
+        <scene sceneID="zhO-Y0-0Qs">
+            <objects>
+                <viewController id="FXq-fm-WcU" customClass="AddNewResponseViewController" customModule="WhoCheatin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ePB-iR-iLt">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGf-gb-l1k">
+                                <rect key="frame" x="20" y="964" width="75" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="eGR-Fb-V9y"/>
+                                    <constraint firstAttribute="height" constant="40" id="q3t-K1-heC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="FXq-fm-WcU" eventType="touchUpInside" id="WY4-3x-krf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUm-d8-GUo">
+                                <rect key="frame" x="20" y="270" width="728" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new response below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-Pb-Po6">
+                                <rect key="frame" x="20" y="170" width="728" height="48"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44g-19-f2I">
+                                <rect key="frame" x="673" y="320" width="75" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nrn-Kw-usI"/>
+                                    <constraint firstAttribute="width" constant="75" id="qUn-gB-wHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="25"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="FXq-fm-WcU" eventType="touchUpInside" id="06W-R7-Phr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26713461150000001" green="0.084557508490000002" blue="0.61417354059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Zo-wj-mbD" firstAttribute="trailing" secondItem="cUm-d8-GUo" secondAttribute="trailing" constant="20" id="1vX-4n-8Fh"/>
+                            <constraint firstItem="Ax9-Pb-Po6" firstAttribute="leading" secondItem="ePB-iR-iLt" secondAttribute="leading" constant="20" id="5Bw-WF-9A7"/>
+                            <constraint firstItem="44g-19-f2I" firstAttribute="top" secondItem="cUm-d8-GUo" secondAttribute="bottom" constant="20" id="Bjo-QU-Nrg"/>
+                            <constraint firstItem="vGf-gb-l1k" firstAttribute="leading" secondItem="9Zo-wj-mbD" secondAttribute="leading" constant="20" id="FOf-AL-bRU"/>
+                            <constraint firstItem="Ax9-Pb-Po6" firstAttribute="centerX" secondItem="ePB-iR-iLt" secondAttribute="centerX" id="J4Y-JZ-ehT"/>
+                            <constraint firstItem="cUm-d8-GUo" firstAttribute="leading" secondItem="9Zo-wj-mbD" secondAttribute="leading" constant="20" id="JXZ-gU-NDd"/>
+                            <constraint firstItem="9Zo-wj-mbD" firstAttribute="trailing" secondItem="Ax9-Pb-Po6" secondAttribute="trailing" constant="20" id="ZJj-oi-68S"/>
+                            <constraint firstItem="Ax9-Pb-Po6" firstAttribute="top" secondItem="9Zo-wj-mbD" secondAttribute="top" constant="150" id="fh0-Mz-hFG"/>
+                            <constraint firstItem="9Zo-wj-mbD" firstAttribute="trailing" secondItem="44g-19-f2I" secondAttribute="trailing" constant="20" id="fwe-XU-gBf"/>
+                            <constraint firstItem="9Zo-wj-mbD" firstAttribute="bottom" secondItem="vGf-gb-l1k" secondAttribute="bottom" constant="20" id="mOw-Dj-8u7"/>
+                            <constraint firstItem="cUm-d8-GUo" firstAttribute="top" secondItem="9Zo-wj-mbD" secondAttribute="top" constant="250" id="vQ2-pl-NTL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Zo-wj-mbD"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="44g-19-f2I" id="QwD-WN-q8a"/>
+                        <outlet property="backButton" destination="vGf-gb-l1k" id="uBA-os-uBZ"/>
+                        <outlet property="newResponseTextView" destination="cUm-d8-GUo" id="uv3-b3-b81"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qek-8y-hef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoSample_ByTailorBrands" width="110" height="110"/>
+        <image name="spongebobicon" width="339" height="339"/>
+    </resources>
+</document>
