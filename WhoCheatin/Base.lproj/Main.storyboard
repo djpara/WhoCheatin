@@ -104,7 +104,7 @@
                         <outlet property="logoButton" destination="lew-P4-vBE" id="Y8w-ok-GHo"/>
                         <outlet property="nameTextField" destination="9if-nx-jyb" id="VIy-P3-bBf"/>
                         <outlet property="nextButton" destination="Sxh-ND-RP9" id="pkz-hB-Jmo"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="RzR-0t-1PP"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segue" modalTransitionStyle="crossDissolve" id="RzR-0t-1PP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpW-EF-6v9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,7 +148,7 @@
                                     <constraint firstAttribute="height" constant="150" id="rGr-UM-KVl"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FXq-fm-WcU" kind="show" id="wnS-vV-aMe"/>
+                                    <segue destination="FXq-fm-WcU" kind="presentation" modalTransitionStyle="flipHorizontal" id="wnS-vV-aMe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-KR-9Cg">

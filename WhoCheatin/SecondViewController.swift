@@ -27,7 +27,8 @@ class SecondViewController: UIViewController {
     var receivedGameString: String?
     var receivedProfileImage: UIImage?
     
-    var answers: [String] = []
+    fileprivate var answers: [String] = []
+    fileprivate var randomPics: [UIImage] = [#imageLiteral(resourceName: "monopolyCheater"), #imageLiteral(resourceName: "perfectBalls"), #imageLiteral(resourceName: "cheatingDogs")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,19 +46,20 @@ class SecondViewController: UIViewController {
             
         if let rPI = receivedProfileImage {
             profileImage = rPI
+            randomPics.append(rPI)
         }
         
-        answers = ["Take a vote",
-            "100% cheatin'",
-            "WhAt Is ThIs GaMe?",
-            "Definitely",
-            "\(playerName)'s a shark. Don't trust them.",
-            "Watch \(playerName)'s hands",
-            "I trust \(playerName)",
-            "Take a look under the table, \(playerName) is stashing cards",
-            "Beginner's luck",
-            "I don't think that \(playerName) would do that",
-            "\(playerName) is a saint! Just look at their picture!"]
+        answers = ["Take a vote", // 0
+            "100% cheatin'",    // 1
+            "WhAt Is ThIs GaMe?", // 2
+            "Definitely", // 3
+            "\(playerName)'s a shark. Don't trust them.", // 4
+            "Watch \(playerName)'s hands",  // 5
+            "I trust \(playerName)",  // 6
+            "Take a look under the table, \(playerName) is stashing cards", // 7
+            "Beginner's luck",  // 8
+            "I don't think that \(playerName) would do that", // 9
+            "\(playerName) is a saint! Just look at their picture!"]  // 10
     }
     
     private func configureUIComponents() {
@@ -95,20 +97,35 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func tapButtonTapped(_ sender: UIButton) {
-        let answerIndex = arc4random_uniform(UInt32(answers.count-1))
+        let randomIndex = arc4random_uniform(UInt32(answers.count))
         
         sbImage.isHidden = false
         
-        switch answerIndex {
+        switch randomIndex {
         case 2:
             sbImage.image = #imageLiteral(resourceName: "spongebobicon")
         case 4:
             sbImage.image = #imageLiteral(resourceName: "poker-sharks-darya-hrybava")
-        default:
+        case 5:
+            sbImage.image = #imageLiteral(resourceName: "hands")
+        case 7:
+            sbImage.image = #imageLiteral(resourceName: "cheatingDogs")
+        case 8:
+            sbImage.image = #imageLiteral(resourceName: "beginner")
+        case 10:
             sbImage.image = profileImage
+        default:
+            sbImage.image = getPicFromRandom()
         }
         
-        answerLabel.text = answers[Int(answerIndex)]
+        sbImage.contentMode = .scaleAspectFit
+        
+        answerLabel.text = answers[Int(randomIndex)]
+    }
+    
+    private func getPicFromRandom() -> UIImage {
+        let randomIndex = arc4random_uniform(UInt32(randomPics.count))
+        return randomPics[Int(randomIndex)]
     }
     
     @IBAction func clearButtonTapped(_ sender: UIButton) {
